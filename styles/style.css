@@ -561,6 +561,31 @@ section {
 }
 
 /* ==========================================
+   SIMPLE RESPONSIVE DESIGN FOR PROJECTS PAGE
+   ========================================== */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ==========================================
    SKILLS PAGE STYLES
    ========================================== */
 
