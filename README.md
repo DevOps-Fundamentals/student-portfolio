@@ -12,29 +12,19 @@ It includes five interlinked HTML pages, all styled with a shared responsive CSS
 ## **Folder Structure**
 
 student-portfolio/
-
 │
-
 ├── .gitignore
-
 ├── README.md
 
 ├── src/
-
 │   ├── index.html
-
 │   ├── profile.html
-
 │   ├── projects.html
-
 │   ├── skills.html
-
 │   └── achievements.html
-
 │   └── about.html
 
 └── styles/
-
     └── style.css
 
 Each page is collaboratively developed on separate feature branches and integrated through protected pull requests for a clean, linear Git history.
