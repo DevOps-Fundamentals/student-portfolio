@@ -3,10 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKILLS</title>
-    <link href="../styles/style.css" rel="stylesheet">
+    <title>Skills - Showcase Hub</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><h1>Showcase Hub</h1></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="skills-section">
+            <div class="container fade-in">
+                <h2 class="section-title">My Technical & Soft Skills</h2>
+                <p class="text-center mb-4">A detailed breakdown of my core competencies, from programming to teamwork.</p>
+
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code text-secondary"></i> Technical Stack</h3>
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Proficiency</th>
+                                    <th>Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5 & CSS3</td>
+                                    <td>
+                                        <div class="skill-bar-container">
+                                            <div class="skill-bar" style="width: 95%;">95%</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-primary">Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript (ES6+)</td>
+                                    <td>
+                                        <div class="skill-bar-container">
+                                            <div class="skill-bar" style="width: 70%;">70%</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-primary">Competent</td>
+                                </tr>
+                                <tr>
+                                    <td>Python (Data Analysis)</td>
+                                    <td>
+                                        <div class="skill-bar-container">
+                                            <div class="skill-bar" style="width: 55%;">55%</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-primary">Intermediate</td>
+                                </tr>
+                                <tr>
+                                    <td>Git & GitHub</td>
+                                    <td>
+                                        <div class="skill-bar-container">
+                                            <div class="skill-bar" style="width: 85%;">85%</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-primary">Proficient</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users text-secondary"></i> Soft Skills & Competencies</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Team Collaboration</span>
+                                <span class="skill-level">Excellent</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Problem Solving</span>
+                                <span class="skill-level">High</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Time Management</span>
+                                <span class="skill-level">Good</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Communication</span>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="projects.html" class="btn btn-primary">View My Projects</a>
+                    <a href="achievements.html" class="btn btn-secondary">My Achievements</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Showcase Hub</h3>
+                    <p>Building a future, one project at a time. This portfolio showcases our collaborative effort.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Showcase Hub Team. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
