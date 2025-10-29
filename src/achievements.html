@@ -3,10 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACHIEVEMENTS</title>
-    <link href="../styles/style.css" rel="stylesheet">
+    <title>Achievements | Student Portfolio</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html" class="active">Achievements</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= ACHIEVEMENTS SECTION ================= -->
+    <section class="achievements-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+
+            <div class="achievements-grid">
+
+                <!-- Achievement 1 -->
+                <div class="achievement-card slide-in-left">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">🏅</div>
+                        <div>
+                            <h3>Dean’s Honor List</h3>
+                            <span class="achievement-date">June 2022</span>
+                        </div>
+                    </div>
+                    <p class="achievement-description">
+                        Recognized among the top 5% of students in the Department of Software Engineering for outstanding academic performance throughout the semester.
+                    </p>
+                    <p class="achievement-issuer">Issued by Borcelle University</p>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card slide-in-right">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">💻</div>
+                        <div>
+                            <h3>Certified Web Developer</h3>
+                            <span class="achievement-date">September 2023</span>
+                        </div>
+                    </div>
+                    <p class="achievement-description">
+                        Completed a professional certification program focused on modern web development using HTML, CSS, JavaScript, and the MERN stack.
+                    </p>
+                    <p class="achievement-issuer">Issued by Coursera / Meta</p>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card slide-in-left">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">🎯</div>
+                        <div>
+                            <h3>Hackathon Finalist</h3>
+                            <span class="achievement-date">April 2024</span>
+                        </div>
+                    </div>
+                    <p class="achievement-description">
+                        Led a 4-member team to develop an AI-powered women’s safety mobile app, securing a finalist position in the National Tech Innovation Hackathon.
+                    </p>
+                    <p class="achievement-issuer">Hosted by TechVerse Pakistan</p>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="achievement-card slide-in-right">
+                    <div class="achievement-header">
+                        <div class="achievement-icon">🌍</div>
+                        <div>
+                            <h3>Community Volunteer Award</h3>
+                            <span class="achievement-date">December 2024</span>
+                        </div>
+                    </div>
+                    <p class="achievement-description">
+                        Contributed 100+ volunteer hours in organizing software awareness sessions and mentoring students in basic programming skills.
+                    </p>
+                    <p class="achievement-issuer">Recognized by TechYouth Organization</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>A collaborative student portfolio project showcasing individual skills, projects, and achievements.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Student Portfolio | Designed by Member 4</p>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPT ================= -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
