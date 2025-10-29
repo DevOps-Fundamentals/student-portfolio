@@ -12,28 +12,42 @@ It includes five interlinked HTML pages, all styled with a shared responsive CSS
 ## **Folder Structure**
 
 student-portfolio/
+
 │
+
 ├── .gitignore
+
 ├── README.md
+
 ├── src/
+
 │   ├── index.html
+
 │   ├── profile.html
+
 │   ├── projects.html
+
 │   ├── skills.html
+
 │   └── achievements.html
+
+│   └── about.html
+
 └── styles/
+
     └── style.css
 
 Each page is collaboratively developed on separate feature branches and integrated through protected pull requests for a clean, linear Git history.
 
 ## **Team Roles & Responsibilities**
 | **Role**             | **Name**                     |           **Responsibilities**                                                                                        |
-| ------------- | -------------- | ------------------------------------------------------------------------------------------------------- |
+| ---------------- | ------------------------ | ------------------------------------------------------------------------------------------------------- |
 | **Team Lead** | Muhammad Ahmad | Repository setup, baseline commits, branch protection, issue management, release creation, final merges |
 | **Member 1**  | Yasir Iftikhar | Develops `profile.html`                                                                                 |
 | **Member 2**  | Muhammad Rayyan | Develops `projects.html`                                                                                |
 | **Member 3**  | Abdul Wahab Subhani | Develops `skills.html`                                                                                  |
 | **Member 4**  | Kaif Baig | Develops `achievements.html`                                                                            |
+| **Member 5**  | Umar Daraz | Develops `about.html` | 
 
 ## **Git & GitHub Workflow**
 
