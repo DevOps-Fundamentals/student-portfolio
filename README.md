@@ -13,11 +13,9 @@ It includes five interlinked HTML pages, all styled with a shared responsive CSS
 
 student-portfolio/
 
-│
+└── .gitignore
 
-├── .gitignore
-
-├── README.md
+└── README.md
 
 └── src/
 
@@ -34,6 +32,7 @@ student-portfolio/
     └── about.html
 
 └── styles/
+
     └── style.css
 
 Each page is collaboratively developed on separate feature branches and integrated through protected pull requests for a clean, linear Git history.
