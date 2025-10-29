@@ -3,10 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFILE</title>
-    <link href="../styles/style.css" rel="stylesheet">
+    <title>Student Profile - Showcase Hub</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Showcase Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <h2 class="section-title">Student Profile</h2>
+            
+            <div class="profile-container">
+                <!-- Profile Image & Basic Info -->
+                <div class="profile-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="Student Profile" class="profile-image">
+                    <div class="info-card">
+                        <h4>Quick Info</h4>
+                        <ul class="info-list">
+                            <li><strong>Name:</strong> John Doe</li>
+                            <li><strong>Roll No:</strong> L1F22BSSE0260</li>
+                            <li><strong>Program:</strong> BS Software Engineering</li>
+                            <li><strong>Semester:</strong> 6th</li>
+                            <li><strong>University:</strong> University of Central Punjab</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="profile-details">
+                    <h3>About Me</h3>
+                    <p>
+                        I am a passionate software engineering student with a strong interest in web development, 
+                        artificial intelligence, and cloud computing. My journey in technology began during my 
+                        freshman year, and since then I've been constantly learning and building projects to 
+                        enhance my skills.
+                    </p>
+                    <p>
+                        I believe in the power of collaboration and continuous learning. Through various academic 
+                        projects and personal initiatives, I've developed a solid foundation in modern web 
+                        technologies and software development practices.
+                    </p>
+
+                    <!-- Education -->
+                    <div class="info-card">
+                        <h4>Education</h4>
+                        <ul class="info-list">
+                            <li>
+                                <strong>BS Software Engineering</strong><br>
+                                University of Central Punjab (2022 - Present)<br>
+                                <em>Current GPA: 3.6/4.0</em>
+                            </li>
+                            <li>
+                                <strong>Intermediate (FSc Pre-Engineering)</strong><br>
+                                Punjab College (2020 - 2022)<br>
+                                <em>Grade: A+</em>
+                            </li>
+                            <li>
+                                <strong>Matriculation (Science)</strong><br>
+                                The Educators School (2018 - 2020)<br>
+                                <em>Grade: A+</em>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="info-card">
+                        <h4>Contact Information</h4>
+                        <ul class="info-list">
+                            <li><strong>Email:</strong> l1f22bsse0260@ucp.edu.pk</li>
+                            <li><strong>Phone:</strong> +92 300 1234567</li>
+                            <li><strong>LinkedIn:</strong> linkedin.com/in/johndoe</li>
+                            <li><strong>GitHub:</strong> github.com/johndoe</li>
+                            <li><strong>Location:</strong> Lahore, Pakistan</li>
+                        </ul>
+                    </div>
+
+                    <!-- Academic Interests -->
+                    <div class="info-card">
+                        <h4>Academic Interests</h4>
+                        <ul class="info-list">
+                            <li>Web Development & Full-Stack Applications</li>
+                            <li>Machine Learning & Artificial Intelligence</li>
+                            <li>Cloud Computing & DevOps</li>
+                            <li>Database Management Systems</li>
+                            <li>Software Engineering Principles</li>
+                            <li>Mobile Application Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Showcase Hub</h3>
+                    <p>A collaborative student portfolio project demonstrating teamwork and technical excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University of Central Punjab</p>
+                    <p>Email: l1f22bsse0260@ucp.edu.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Showcase Hub. All rights reserved. | DevOps Assignment Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -3,10 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECTS</title>
+    <title>Showcase Hub - Projects</title>
     <link href="../styles/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Showcase Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+  <section class="projects-section container fade-in">
+    <br><br>
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card slide-in-left">
+        <div class="project-header">
+          <span class="project-icon">💻</span>
+          <h3>Portfolio Website</h3>
+        </div>
+        <p class="project-description">
+          A responsive personal portfolio built using HTML, CSS, and JavaScript.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card slide-in-right">
+        <div class="project-header">
+          <span class="project-icon">☁️</span>
+          <h3>Weather App</h3>
+        </div>
+        <p class="project-description">
+          An app that fetches live weather updates using the OpenWeather API.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">API</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card slide-in-left">
+        <div class="project-header">
+          <span class="project-icon">📋</span>
+          <h3>Task Manager</h3>
+        </div>
+        <p class="project-description">
+          A task management tool to add, edit, and track to-dos efficiently.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JS</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Showcase Hub</h3>
+                    <p>A collaborative student portfolio project demonstrating teamwork and technical excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University of Central Punjab</p>
+                    <p>Email: l1f22bsse0260@ucp.edu.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Showcase Hub. All rights reserved. | DevOps Assignment Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

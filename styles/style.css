@@ -371,6 +371,35 @@ section {
     line-height: 1.6;
 }
 
+/* Simple Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: var(--color-primary);
+    width: 100%;
+    text-align: center;
+    transition: var(--transition);
+    padding: 1.5rem 0;
+  }
+
+  .nav-links.active { left: 0; }
+
+  .projects-grid,
+  .team-stats,
+  .values-grid,
+  .profile-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-title { font-size: 1.75rem; }
+  .project-card { padding: 1.5rem; }
+  .footer-content { grid-template-columns: 1fr; text-align: center; }
+}
+
 /* ==========================================
    QUICK NAVIGATION CARDS
    ========================================== */
@@ -559,6 +588,31 @@ section {
     color: var(--color-secondary);
     text-decoration: underline;
 }
+
+/* ==========================================
+   SIMPLE RESPONSIVE DESIGN FOR PROJECTS PAGE
+   ========================================== */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* ==========================================
    SKILLS PAGE STYLES

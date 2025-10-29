@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
+    <title>Showcase Hub - About Us</title>
     <link href="../styles/style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Showcase Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Team Section -->
+    <section class="about-team">
+        <div class="container fade-in">
+            <h2 class="section-title">About Our Team</h2>
+
+            <div class="team-intro">
+                <p class="team-description">
+                    We are a dedicated group of <strong>five passionate software engineering students</strong> from the
+                    University of Central Punjab,
+                    united by our shared goal of learning, building, and growing together. This portfolio reflects our
+                    teamwork,
+                    creativity, and understanding of modern web development practices.
+                </p>
+                <p class="team-description">
+                    Through this project, we’ve applied core concepts of <strong>Git, GitHub, HTML, CSS, and responsive
+                        design</strong>
+                    to collaborate effectively and showcase our technical skills. We believe in continuous improvement,
+                    innovation, and collaboration to make impactful digital experiences.
+                </p>
+            </div>
+
+            <div class="team-stats">
+                <div class="stat-card">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-label">Team Members</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-label">Web Pages</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Team Collaboration</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number">∞</h3>
+                    <p class="stat-label">Possibilities</p>
+                </div>
+            </div>
+
+            <div class="team-values">
+                <h3 class="subsection-title">Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h4>Excellence</h4>
+                        <p>We aim to produce quality work and continuously improve our skills.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Teamwork</h4>
+                        <p>We believe great results come from effective collaboration.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h4>Innovation</h4>
+                        <p>We embrace creativity and think beyond the obvious.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">📚</div>
+                        <h4>Learning</h4>
+                        <p>We value continuous learning and exploring new technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Showcase Hub</h3>
+                    <p>A collaborative student portfolio project demonstrating teamwork and technical excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University of Central Punjab</p>
+                    <p>Email: l1f22bsse0260@ucp.edu.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Showcase Hub. All rights reserved. | DevOps Assignment Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
